@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/styles.css" rel="stylesheet">
+    <title>Calculator By Amit</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <h1>Calculator</h1>
+    </header>
+    <form action="" class="cont">
+        <fieldset>
+            <legend>My Calculator</legend>
+            <textarea name="display" id="display" rows="4" cols="32"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Input</legend>
+            <div class="operands">
+                <p>Operands :</p>
+                <textarea class="textarea first" name="operand1" id="opone" rows="1" cols="4"></textarea>
+                <textarea class="textarea first" name="operand2" id="optwo" rows="1" cols="4"></textarea>
+            </div>
+            <div class="operators">
+                <p>Operators :</p>
+                <input class="button add"type="button" name="addition" value="+" onclick="add()">
+                <input class="button mult"type="button" name="multiplication" value="&times;" onclick="multiply()">
+                <input class="button div"type="button" name="division" value=":" onclick="divide()">
+                <input class="button cle"type="button" name="clear" value="CLEAR" onclick="clean()">
+            </div>
+        </fieldset>
+    </form>
+    <script src="script/script.js"></script>
+</body>
+</html>
